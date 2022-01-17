@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.sidebar {
+    float: left;
+    width: 250px;
+    padding: 10px 10px;
+    height: 100%;
+    overflow-y: auto;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.sidebar-wrapper {
+    padding-bottom: 200px;
+}
+
+.sidebar__menu {
+    margin: 20px 0;
+    color: rgb(190, 190, 190);
+}
+
+.sidebar__logo img {
+    max-width: 140px;
+    width: 100%;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+.sidebar__menu a {
+    color: rgb(190, 190, 190);
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+}
+
+.sidebar__menu svg {
+    margin: 0 20px;
+}
+
+.sidebar__menu a.sidebar__menu__selecionado {
+    color: white;
+    background-color: rgb(80, 80, 80);
+    border-radius: 5px;
+}
+
+.sidebar__menu__item {
+    margin-top: 12px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.sidebar__menu p.sidebar__menu__title {
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.sidebar__menu__componente {
+    background-color: white;
+    color: black;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 2px;
+}
+
+.sidebar__menu__item span {
+    font-weight: bold;
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+.sidebar__menu__item img {
+    width: 31px;
+    height: 30px;
+    vertical-align: middle;
+    display: inline-block;
+    border-radius: 2px;
+}
+
+.sidebar__playlists {
+    padding: 20px;
+    border-bottom: 1px solid rgb(40, 40, 40);
+}
+
+.sidebar__playlists a {
+    margin: 10px 0;
+    display: block;
+    color: rgb(190, 190, 190);
+    text-decoration: none;
+}
+
+.sidebar__playlists a:hover {
+    color: white;
+}
+
+
+/* INTERFACE PRINCIPAL */
+
+.main {
+    width: calc(100% - 250px);
+    background-image: linear-gradient(360deg, black, purple);
+    height: 100%;
+    float: left;
+    padding: 15px 50px;
+    overflow-y: auto;
+}
+
+.main__row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.main-wrapper {
+    padding-bottom: 50px;
+}
+
+.main__row__title h2 {
+    color: white;
+}
+
+.main__col {
+    cursor: pointer;
+    width: 12%;
+    margin-right: 1%;
+    margin-top: 20px;
+    background-color: #282828;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+}
+
+.main__col h4 {
+    color: white;
+    margin: 5px 0;
+}
+
+.main__col p {
+    color: rgb(100, 100, 100);
+    margin: 8px 0;
+    font-size: 13px;
+    text-align: left;
+}
+
+.main__col img {
+    width: 100px;
+    height: 100px;
+}
+
+.player__control__pause {
+    display: none;
+}
+
+.player {
+    width: 100%;
+    padding: 20px;
+    height: 130px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    background-color: rgb(24, 24, 24);
+    align-items: center;
+    justify-content: center;
+}
+
+.player__artist {
+    max-width: 20px;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    color: white;
+}
+
+.player__artist h3 {
+    display: inline-block;
+    color: white;
+    font-weight: normal;
+    font-size: 20px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.player__artist h3>span {
+    color: rgb(200, 200, 200);
+    font-size: 13px;
+}
+
+.player__control {
+    width: 70%;
+    text-align: center;
+}
+
+.player__control__buttons a {
+    color: white;
+    margin: 8px 15px;
+    font-size: 18px;
+}
+
+.player__control__progress {
+    width: 100%;
+    max-width: 600px;
+    height: 7px;
+    margin-top: 20px;
+    position: relative;
+    border-radius: 8px;
+    display: inline-block;
+    background-color: rgb(130, 130, 130);
+}
+
+.player__control__progress__2 {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 7px;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.audioplayer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -999;
+    opacity: 0;
+}
+
+.imagePlayer {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+@media screen and (max-width: 1350px) {
+    .main__col {
+        width: 50%;
+    }
+}

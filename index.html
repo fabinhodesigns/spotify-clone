@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;1,700&family=Poppins:wght@400;500;700&family=Roboto:wght@500;700&display=swap" rel="stylesheet" />
+    <title>Spotify - Web Player</title>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="sidebar-wrapper">
+            <div class="sidebar__logo">
+                <img src="img/spotify-logo.png" />
+            </div>
+            <div class="sidebar__menu">
+                <a class="sidebar__menu__selecionado" href="#"><i class="fas fa-home"></i> Inicío</a
+          >
+          <a href="#"><i class="fas fa-search"></i> Buscar</a>
+                <a href="#"><i class="fas fa-database"></i> Biblioteca</a>
+            </div>
+            <div class="sidebar__menu">
+                <p class="sidebar__menu__title">Playlists</p>
+
+                <div class="sidebar__menu__item">
+                    <div class="sidebar__menu__componente">+</div>
+                    <span>Criar uma playlist</span>
+                </div>
+                <div class="sidebar__menu__item">
+                    <img src="/img/musicascurtidas.png" />
+                    <span>Músicas curtidas</span>
+                </div>
+            </div>
+
+            <div class="sidebar__playlists">
+                <a href="">Playlists</a>
+                <a href="">Playlists</a>
+                <a href="">Playlists</a>
+                <a href="">Playlists</a>
+                <a href="">Playlists</a>
+                <a href="">Playlists</a>
+            </div>
+
+            <div class="sidebar__playlists">
+                <a href="">Playlists</a>
+                <a href="">Playlists</a>
+                <a href="">Playlists</a>
+                <a href="">Playlists</a>
+                <a href="">Playlists</a>
+                <a href="">Playlists</a>
+            </div>
+
+            <div class="sidebar__playlists">
+                <a href="">Playlists</a>
+                <a href="">Playlists</a>
+                <a href="">Playlists</a>
+                <a href="">Playlists</a>
+                <a href="">Playlists</a>
+                <a href="">Playlists</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="main-wrapper">
+            <div class="main__row">
+                <div class="main__row__title">
+                    <h2>Paradas</h2>
+                </div>
+            </div>
+
+            <div class="main__row">
+                <div class="main__col">
+                    <img src="img/top-50-brasil.jpg" />
+                    <h4>50 mais tocadas do Brasil</h4>
+                </div>
+
+                <div class="main__col">
+                    <img src="img/top-50-mundo.jpg" />
+                    <h4>50 mais tocadas do Mundo</h4>
+                </div>
+
+                <div class="main__col">
+                    <img src="img/viral1.jpg" />
+                    <h4>50 virais do Brasil</h4>
+                </div>
+
+                <div class="main__col">
+                    <img src="img/dailymix1.jpg" />
+                    <h4>Seu primeiro dailymix</h4>
+                </div>
+
+                <div class="main__col">
+                    <img src="img/dailymix2.jpg" />
+                    <h4>Seu secundo dailymix</h4>
+                </div>
+
+                <div class="main__col">
+                    <img src="img/dailymix3.jpg" />
+                    <h4>50 mais tocadas do Brasil</h4>
+                </div>
+
+                <div class="main__col">
+                    <img src="img/playlist1.jpg" />
+                    <h4>50 mais tocadas do Brasil</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="main__row">
+            <div class="main__row__title">
+                <h2>Minhas músicas</h2>
+            </div>
+        </div>
+
+        <div class="main__row">
+            <div class="main__col" data-image="img/playlist2.jpg" data-artist="Post Malone" data-song="Rockstar" data-file="/assets/music/postMalone-rockstar.mp3">
+                <img src="img/playlist2.jpg" />
+                <h4>VIBES BASKETBALL</h4>
+                <p>Rockstar</p>
+            </div>
+
+            <div class="main__col" data-image="img/playlist1.jpg" data-artist="Teto" data-song="Manha" data-file="/assets/music/teto-manha.mp3">
+                <img src="img/playlist1.jpg" />
+                <h4>RAP && TRAP</h4>
+                <p>Manha</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="player">
+        <div class="player__artist"></div>
+
+        <div class="player__control">
+            <div class="player__control__buttons">
+                <a href="#"><i class="fas fa-backward"></i></a>
+                <a class="player__control__pause" id="pauseBtn" href="#"><i class="far fa-pause-circle"></i
+          ></a>
+                <a id="playBtn" href="#"><i class="far fa-play-circle"></i></a>
+                <a href="#"><i class="fas fa-forward"></i></a>
+            </div>
+            <div class="player__control__progress">
+                <div class="player__control__progress__2"></div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="audioplayer" class="audioplayer" controls=""></audio>
+
+    <script src="js/all.min.js "></script>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
