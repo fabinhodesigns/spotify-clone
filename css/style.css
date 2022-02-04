@@ -10,6 +10,21 @@ body {
     height: 100%;
 }
 
+::-webkit-scrollbar-track {
+    background-color: black;
+}
+::-webkit-scrollbar {
+    width: 15px;
+    background: #F4F4F4;
+}
+::-webkit-scrollbar-thumb {
+    background: #5c5c5c;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #888888;
+}
+
 .sidebar {
     float: left;
     width: 250px;
@@ -47,10 +62,10 @@ body {
     margin: 0 20px;
 }
 
-.sidebar__menu a.sidebar__menu__selecionado {
+.sidebar__menu a:hover {
     color: white;
-    background-color: rgb(80, 80, 80);
     border-radius: 5px;
+    transition: color 0.5s;
 }
 
 .sidebar__menu__item {
@@ -168,8 +183,9 @@ body {
 
 .player {
     width: 100%;
-    padding: 20px;
-    height: 130px;
+    padding: 1.5rem;
+    height: 20
+    vh;
     position: absolute;
     left: 0;
     bottom: 0;
