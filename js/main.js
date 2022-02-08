@@ -39,8 +39,9 @@ document.querySelectorAll('.main__col').forEach(item => {
         let artist = item.getAttribute('data-artist')
         let song = item.getAttribute('data-song')
         let file = item.getAttribute('data-file')
-
         let playArtistComponent = document.getElementsByClassName('player__artist')
+
+        let atualizacao = setInterval(atualizarBarra, 500)
 
         playArtistComponent[0].innerHTML =
             `
@@ -48,11 +49,29 @@ document.querySelectorAll('.main__col').forEach(item => {
             image +
             `">
             <h4>` +
-            artist +
-            `<br/><span>` +
             song +
+            `<br/><span>` +
+            artist +
             `</span></h4>`
 
         playSong(file)
     })
+
+    function atualizarBarra() {
+        const progress = document.getElementById('progress')
+
+        if (document.getElementById('rockstar')) {
+            song_id = document.getElementById('rockstar')
+        } else {
+            song_id = document.getElementById('manha')
+        }
+
+        const duracaoTotal = song_id.duration
+
+        if (song_id.paused) {
+            let larguraPercorrida = (600 * song_id.currentTime) / duracaoTotal
+            console.log(larguraPercorrida)
+                // progress.style.width = parseInt(larguraPercorrida) + 'px'
+        }
+    }
 })

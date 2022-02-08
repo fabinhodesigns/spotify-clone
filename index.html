@@ -38,7 +38,6 @@
                     <span>Músicas curtidas</span>
                 </div>
             </div>
-
             <div class="sidebar__playlists">
                 <a href="">Playlist 1</a>
                 <a href="">Playlist 2</a>
@@ -46,6 +45,15 @@
                 <a href="">Playlist 4</a>
                 <a href="">Playlist 5</a>
                 <a href="">Playlist 6</a>
+                <a href="">Playlist 7</a>
+                <a href="">Playlist 7</a>
+                <a href="">Playlist 7</a>
+                <a href="">Playlist 7</a>
+                <a href="">Playlist 7</a>
+                <a href="">Playlist 7</a>
+                <a href="">Playlist 7</a>
+                <a href="">Playlist 7</a>
+                <a href="">Playlist 7</a>
                 <a href="">Playlist 7</a>
             </div>
         </div>
@@ -105,6 +113,7 @@
 
         <div class="main__row">
             <div class="main__col" data-image="img/postMalone-rockstar.jpg" data-artist="Post Malone" data-song="Rockstar" data-file="/assets/music/postMalone-rockstar.mp3">
+                <audio id="rockstar" src="/assets/music/postMalone-rockstar.mp3"></audio>
                 <img src="img/playlist2.jpg" />
                 <h4>VIBES BASKETBALL</h4>
                 <p>Post Malone - Rockstar</p>
@@ -123,14 +132,15 @@
 
         <div class="player__control">
             <div class="player__control__buttons">
+                <a href="#"><img class="imgSmallSize" src="/img/iconRandomSpotifyGray.png" /></a>
                 <a href="#"><i class="fas fa-backward"></i></a>
-                <a class="player__control__pause" id="pauseBtn" href="#"><i class="far fa-pause-circle"></i
-          ></a>
-                <a id="playBtn" href="#"><i class="far fa-play-circle"></i></a>
+                <a class="player__control__pause" id="pauseBtn" href="#"><img class="imgSize" src="/img/iconPauseSpotify.png" /></a>
+                <a id="playBtn" href="#"><img class="imgSize" src="/img/iconPlaySpotify.png" /></a>
                 <a href="#"><i class="fas fa-forward"></i></a>
+                <a href="#"><img class="imgSmallSize" src="/img/iconRepeatSpotifyGray.png" /></a>
             </div>
             <div class="player__control__progress">
-                <div class="player__control__progress__2"></div>
+                <div id="progress" class="player__control__progress__2"></div>
             </div>
         </div>
     </div>
