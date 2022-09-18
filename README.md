@@ -1,5 +1,15 @@
-# Spotify - Web Player Clone
+# 🎶 Spotify - Web Player Clone
 
-Um clone básico do spotify feito totalmente com HTML, CSS e JavaScript (Puro) com a função de reproduzir músicas.
+A basic spotify clone.
 
-Em andamento...
+[Click here for you to see](https://fabinho070.github.io/nlw-esports-explorer/) ❤️ 
+
+## 🛠️ Technologies
+- HTML
+- CSS
+- JavaScript
+- Git and Github
+
+## 📞 Contacts
+- freitasfabiano08@gmail.com
+- @fabinhofreitastw
