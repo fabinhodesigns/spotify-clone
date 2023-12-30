@@ -10,4 +10,4 @@ A basic spotify clone.
 
 ## 📞 Contacts
 - freitasfabiano08@gmail.com
-- @fabinhofreitastw
+- @ffabiiin
